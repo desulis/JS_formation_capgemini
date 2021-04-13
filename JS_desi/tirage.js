@@ -13,4 +13,4 @@ function add_nom() {
 }
 
 
-console.log(Math.floor(2.6));
+//console.log(Math.floor(2.6)); test math.floor to take the lowest number round, here result is 2 (ignored the .6)
