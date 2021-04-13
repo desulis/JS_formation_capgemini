@@ -20,17 +20,19 @@
         this.autor = autor;
         this.numPage = numPage;
         this.onPage = function onPage(){
-            let page = this.numPage;
-            switch (numPage) {
-                case page <= 100;
-                display('You are in beetween 1 to 100')
+            let onPage = this.onPage;
+            switch (true) {
+                case onPage <= 100:
+                    console.log('You are in beetween 1 to 100')
                 break;
-                case page <= 200;
-                display('You are in beetween 1 to 200')
+                case onPage <= 200:
+                    console.log('You are in beetween 101 to 200')
                 break;
-                case page <= 300;
-                display('You are in beetween 1 to 100')
+                case onPage <= 300:
+                    console.log('You are in beetween 201 to 100')
                 break;
+                default:
+                    console.log('You have read more than 300 pages')
             }
         }
     }
@@ -49,7 +51,7 @@
     Revue.prototype = Object.create(Document.prototype);
     Dictionnaire.prototype = Object.create(Document.prototype);
     
-    let HarryPotter = new Livre (150,'Harry Potter', 'J.K Rowling', 567);
+    let HarryPotter = new Livre (150,'Harry Potter', 'J.K Rowling', 567, 50);
     
     console.log(HarryPotter);
     
