@@ -34,13 +34,13 @@
             }
         }
     }
-    function Revue(mois, annee){
+    function Revue(numReg, title, mois, annee){
         Document.call(this, numReg, title)
     this.mois = mois;
     this.annee = annee;
     }
     
-    function Dictionnaire(langue){
+    function Dictionnaire(numReg, title, langue){
         Document.call(this, numReg, title)
         this.langue = langue;
     }
