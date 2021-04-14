@@ -9,7 +9,7 @@ function tirage() {
 
 function add_nom() {
     var nom=prompt("saisir un nom");
-    Noms.push(nom);
+    Noms.push(nom); // add another nom (name) to table Noms[]
 }
 
 

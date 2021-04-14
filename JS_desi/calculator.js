@@ -6,16 +6,18 @@ function calcSalary(event) {
 	var dependent = document.getElementById("dependents")
 	var gender = document.getElementById("gender");
 
-	var salaryBrut = parseInt(grossSalary.value); // .value is the value of the input inside form
+	var salaryBrut = parseInt(grossSalary.value); // .value is the value of the input inside a form
 	var supplement = 0;
 	if (allowance.checked === true){
-		supplement += 150; //.checked to apply a condition if the user checked the chekbox
+		supplement += 150; //.checked to apply a condition if the user checked the checkbox
 	}     
 	if (bonus.checked === true){
 		supplement += 100;
 	}
 	salaryBrut += supplement; 
-	var taxRate = 18;
+	
+	var taxRate = 18; 
+	
 	if (gender.value === "F") {
 		taxRate -= 2
 	}
@@ -35,7 +37,7 @@ function calcSalary(event) {
 	console.log("Salary Brut :" + salaryBrut);
 	console.log("Tax :" + tax);
 	console.log("Salary Net :" + salaryNet);
-	console.log(textImpot);
+	// console.log(textImpot);
 
 	var textImpot = document.querySelector("#text-impot span");
 	textImpot.textContent = tax;

@@ -9,8 +9,7 @@
   
   
   console.log(div(4,0)) */
-
-  function Document (numReg, title){
+function Document (numReg, title){
     this.numReg = numReg;
     this.title = title;
     }
@@ -53,5 +52,4 @@
     
     let HarryPotter = new Livre (150,'Harry Potter', 'J.K Rowling', 567, 50);
     
-    console.log(HarryPotter);
-    
+    console.log(HarryPotter); 
